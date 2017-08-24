@@ -1,0 +1,82 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+		<title></title>
+		<meta http-equiv="Content-Language" content="zh-cn" />
+		<meta http-equiv="Content-Type" content="text/html; charset=GB2312" />
+	</head>
+	<body onload="KAF_WinOnLoad(this)" >
+		<div id='thePageArea'>
+			<div id="theSearchArea">
+									    <table width="100%" style="border-collapse: collapse;">
+									      <tr>
+									        <td style="text-align:left;padding-left:5px;">
+										              服装款号
+												   <input id="sh_sectionnum" name="sh_sectionnum" type="text" class="input" maxlength="20"
+													style="width:120px; " >
+											         所属类别
+													<select id="sh_kind" name="sh_kind"  class="input" 
+														style="width:80px"  >
+													</select>
+													所属品牌
+													<select id="sh_brand" name="sh_brand"  class="input" 
+														style="width:80px"  >	
+													</select>
+													所属季节
+													<select id="sh_season" name="sh_season"  class="input" 
+														style="width:50px"  >
+													</select>
+									        </td>
+									      </tr>
+									    </table>
+									</div>
+									<div id="theEditArea">
+										<table width="100%" >
+											<tr>
+												<td style="align:center">
+												     服装款号
+													<input id="sectionnum" name="sectionnum" type="text" class="input" maxlength="10"
+														style="width:120px" onblur="makeClothingName()" />
+													所属类别
+													<select id="kind" name="kind"  class="input" 
+														style="width:80px"  onblur="makeClothingName()" >
+													</select>
+													所属品牌
+													<select id="brand" name="brand"  class="input" 
+														style="width:80px"  onblur="makeClothingName()">	
+													</select>
+													所属季节
+													<select id="season" name="season"  class="input" 
+														style="width:50px"  onblur="makeClothingName()">
+													</select>
+													服装名称
+													<input id="clothingname" name="clothingname" type="text" class="input" maxlength="60"
+														style="width:120px; "  />
+												</td>
+											</tr>
+											<tr>
+												<td style="align:center">
+													品种条码
+													<input id="barcode" name="barcode" type="text" class="input" maxlength="20"
+														style="width:120px;text-align: center" onkeydown="onKeyUp_Check_Number(this,event)" />
+													吊牌价格
+													<input id="tagprice" name="tagprice" type="text" class="input" maxlength="7"
+														style="width:80px;text-align: center" onkeydown="onKeyUp_Check_Float(this,event)">
+													销售价格
+													<input id="saleprice" name="saleprice" type="text" class="input" maxlength="7"
+														style="width:80px;text-align: center" onkeydown="onKeyUp_Check_Float(this,event)">
+													进货折率
+													<input id="discount" name="discount" type="text" class="input" maxlength="5" value="1.000"
+														style="width:50px;text-align: center" onkeydown="onKeyUp_Check_Float(this,event)">
+													单&nbsp;&nbsp;&nbsp;&nbsp;位
+													<select id="unit" name="unit"  class="input" 
+														style="width:50px"  >
+													</select>
+													<input  type="checkbox" value="1" checked="checked" name="isintoforce" id="isintoforce"/>生效上架
+												</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+	</body>
+</html>
